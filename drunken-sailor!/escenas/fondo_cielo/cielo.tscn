@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhjqrvbjtyq0j"]
+
+[ext_resource type="SpriteFrames" uid="uid://b1ahkbrxhtd6s" path="res://escenas/fondo_cielo/cielo.tres" id="1_8vam7"]
+
+[node name="Fondo_Cielo" type="Node2D"]
+
+[node name="Cielo" type="AnimatedSprite2D" parent="."]
+position = Vector2(3.0517578e-05, 2.4999852)
+scale = Vector2(0.43055558, 0.44675925)
+sprite_frames = ExtResource("1_8vam7")
+animation = &"noche"

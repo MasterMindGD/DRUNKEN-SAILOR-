@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://0udps405g1am"]
+
+[ext_resource type="Texture2D" uid="uid://bnnkr2tpilvuv" path="res://sprites/clock/clock3.png" id="1_yajle"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ikjr8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_yajle")
+}],
+"loop": true,
+"name": &"clock",
+"speed": 5.0
+}]
+
+[node name="ClockTower" type="CharacterBody2D"]
+
+[node name="Clock" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ikjr8")
+animation = &"clock"
