@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6bcmnhh7d23b"]
+
+[ext_resource type="Script" uid="uid://b88oeynd8ybju" path="res://inventario.gd" id="1_7bk11"]
+
+[node name="Inventario" type="Node2D"]
+script = ExtResource("1_7bk11")

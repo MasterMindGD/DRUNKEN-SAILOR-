@@ -1,4 +1,4 @@
-class_name Monedero 
+class_name Monedero   
 extends Node
 
 var _total_monedas: int 

@@ -66,7 +66,7 @@ func _ready():
 	print(riqueza) 
 	
 func race():
-	print("READY? 2... 1!")
+	print("READY? 2... 3!")
 
 #func condicional():
 	#variable = "X..." #opcionalmente, las variables pueden modificarse desde aquí para la ocasión...

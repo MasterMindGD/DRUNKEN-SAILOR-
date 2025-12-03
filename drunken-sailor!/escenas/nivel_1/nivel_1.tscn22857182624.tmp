@@ -467,7 +467,7 @@ position = Vector2(2045, -42)
 position = Vector2(2314, -30)
 
 [node name="Icon22" type="Sprite2D" parent="Monedero"]
-position = Vector2(2343, -4)
+position = Vector2(2460, 8)
 texture = ExtResource("15_y0k0i")
 
 [node name="Trampa2" parent="." instance=ExtResource("8_rvocm")]
