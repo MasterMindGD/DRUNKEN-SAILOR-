@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://db27b5yfsmn0i"
+path="res://.godot/imported/Drunken Sailer - Irish Rovers.mp3-a142467003c9eb82c4bf0db9bf8b42e4.mp3str"
+
+[deps]
+
+source_file="res://musica/Drunken Sailer - Irish Rovers.mp3"
+dest_files=["res://.godot/imported/Drunken Sailer - Irish Rovers.mp3-a142467003c9eb82c4bf0db9bf8b42e4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

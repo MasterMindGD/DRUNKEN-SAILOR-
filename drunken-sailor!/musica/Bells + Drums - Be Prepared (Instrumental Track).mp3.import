@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cpf5r6nirhtep"
+path="res://.godot/imported/Bells + Drums - Be Prepared (Instrumental Track).mp3-ffd8c72b858741da114d236806f8ebcb.mp3str"
+
+[deps]
+
+source_file="res://musica/Bells + Drums - Be Prepared (Instrumental Track).mp3"
+dest_files=["res://.godot/imported/Bells + Drums - Be Prepared (Instrumental Track).mp3-ffd8c72b858741da114d236806f8ebcb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

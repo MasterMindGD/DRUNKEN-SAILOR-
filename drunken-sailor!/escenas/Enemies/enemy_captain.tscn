@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2lg2vsr120pb"]
+
+[ext_resource type="SpriteFrames" uid="uid://bcoqem5jyvsiq" path="res://escenas/pirata/spritesheet.tres" id="1_l3gg7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rr26v"]
+size = Vector2(30, 61)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ohlxp"]
+size = Vector2(48, 28)
+
+[node name="EnemyCaptain" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(5, 5.5)
+shape = SubResource("RectangleShape2D_rr26v")
+
+[node name="Animacion" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_l3gg7")
+animation = &"idle_4"
+autoplay = "idle_4"
+flip_h = true
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(5, 14)
+shape = SubResource("RectangleShape2D_ohlxp")

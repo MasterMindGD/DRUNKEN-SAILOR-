@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvjjla3flqug2"]
+
+[ext_resource type="Script" uid="uid://dk3xk2py6p77y" path="res://escenas/monedero/monedero.gd" id="1_7oiex"]
+
+[node name="Monedero" type="Node"]
+script = ExtResource("1_7oiex")

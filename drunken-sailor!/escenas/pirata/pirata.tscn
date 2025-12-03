@@ -1,18 +1,37 @@
-[gd_scene load_steps=4 format=3 uid="uid://nt840gbl08tf"]
+[gd_scene load_steps=5 format=3 uid="uid://nt840gbl08tf"]
 
 [ext_resource type="SpriteFrames" uid="uid://bcoqem5jyvsiq" path="res://escenas/pirata/spritesheet.tres" id="1_23frr"]
 [ext_resource type="Script" uid="uid://b78eaql1ko557" path="res://escenas/pirata/pirata.gd" id="1_rcjxn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_23frr"]
-size = Vector2(16, 19)
+size = Vector2(18, 23)
 
-[node name="Pirata" type="CharacterBody2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rcjxn"]
+size = Vector2(18, 23)
+
+[node name="Pirata" type="CharacterBody2D" node_paths=PackedStringArray("animacion", "area_2d")]
+collision_layer = 4
 script = ExtResource("1_rcjxn")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = ExtResource("1_23frr")
-animation = &"aterrizar"
+animacion = NodePath("Animacion")
+area_2d = NodePath("Area2D")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -0.5)
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_23frr")
+
+[node name="Animacion" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_23frr")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.145, 2.145)
+position_smoothing_enabled = true
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_rcjxn")

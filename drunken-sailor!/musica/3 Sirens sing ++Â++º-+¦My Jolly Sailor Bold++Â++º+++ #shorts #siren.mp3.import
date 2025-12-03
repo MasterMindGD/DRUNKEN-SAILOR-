@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wqeviellw0e5"
+path="res://.godot/imported/3 Sirens sing +ö+ç-úMy Jolly Sailor Bold+ö+ç+ÿ #shorts #siren.mp3-36a2222a7dad22f111e795fa3bc49008.mp3str"
+
+[deps]
+
+source_file="res://musica/3 Sirens sing +ö+ç-úMy Jolly Sailor Bold+ö+ç+ÿ #shorts #siren.mp3"
+dest_files=["res://.godot/imported/3 Sirens sing +ö+ç-úMy Jolly Sailor Bold+ö+ç+ÿ #shorts #siren.mp3-36a2222a7dad22f111e795fa3bc49008.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

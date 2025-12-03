@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://ck6j6hm367f1y"]
+
+[ext_resource type="Texture2D" uid="uid://doqu17bcswbh5" path="res://sprites/Pirate Ship/Sprites/Tilesets/Platforms (32x32).png" id="1_a44gc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iqgwf"]
+size = Vector2(74, 11)
+
+[node name="Botavara" type="RigidBody2D"]
+collision_mask = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_a44gc")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -2.5)
+shape = SubResource("RectangleShape2D_iqgwf")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]

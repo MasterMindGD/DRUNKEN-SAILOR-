@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://0udps405g1am"]
+[gd_scene load_steps=4 format=3 uid="uid://0udps405g1am"]
 
 [ext_resource type="Texture2D" uid="uid://bnnkr2tpilvuv" path="res://sprites/clock/clock3.png" id="1_yajle"]
+[ext_resource type="Texture2D" uid="uid://emb1pxwjoek2" path="res://sprites/clock/ClockTower-removebg-preview.png" id="2_ikjr8"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ikjr8"]
 animations = [{
@@ -11,10 +12,19 @@ animations = [{
 "loop": true,
 "name": &"clock",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ikjr8")
+}],
+"loop": true,
+"name": &"quadrant",
+"speed": 5.0
 }]
 
 [node name="ClockTower" type="CharacterBody2D"]
+z_index = -1
 
 [node name="Clock" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ikjr8")
-animation = &"clock"
+animation = &"quadrant"
